@@ -3,6 +3,12 @@ https://stackoverflow.com/questions/51909540/why-use-headmaster-instead-of-just-
 >>HEAD
 git push HEAD:A
 
+mudar o url remoto
+https://docs.github.com/pt/free-pro-team@latest/github/using-git/changing-a-remotes-url
+
+pull request and merge
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
 COMMUNITY
 News
 Tutorials
