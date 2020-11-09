@@ -1,0 +1,172 @@
+Practice Aggregate Functions
+
+Avatar
+Practice Aggregate Functions: The Metropolitan Museum of ArtBrief
+Objective
+CALCULATE AND SUMMARIZE DATA
+The Metropolitan Museum of Art
+The Met
+The Metropolitan Museum of Art of New York is one of the world’s largest and finest art museums.
+
+In this project, you will be working with a table named met that contains the museum’s collection of American Decorative Arts.
+
+It has the following columns:
+
+id - the id of the art piece
+department - the department of the art piece
+category - the category of the art piece
+title - the title name of the art piece
+artist - the name of the artist
+date - the date(s) of the art piece
+medium - the medium of the art piece
+country - the country of the artist
+This data was kindly made publicly available under the Open Access Policy.
+
+Let’s get started!
+
+If you get stuck during this project or would like to see an experienced developer work through it, click “Get Help“ to see a project walkthrough video.
+
+Tasks
+7/7 Complete
+Mark the tasks as complete by checking them off
+Pre-Gaming for Aggregates
+1.
+Start by getting a feel for the met table:
+
+SELECT *
+FROM met
+LIMIT 10;
+What are the column names?
+
+
+Hint
+Using LIMIT caps the number of rows in the result.
+
+It is a simple way to keep queries from taking too long to run if you are dealing with a big dataset.
+
+2.
+How many pieces are in the American Decorative Art collection?
+
+
+Hint
+SELECT COUNT(*)
+FROM met;
+Almost 4,000!
+
+3.
+Celery was considered a luxurious snack in the Victorian era (around the 1800s). Wealthy families served stalks of it in intricate glass vases.
+
+Don’t believe it?
+
+Count the number of pieces where the category includes ‘celery’.
+
+
+Hint
+SELECT COUNT(*)
+FROM met
+WHERE category LIKE '%celery%';
+Still curious?
+
+Look at the category names:
+
+SELECT DISTINCT category
+FROM met
+WHERE category LIKE '%celery%';
+4.
+Find the title and medium of the oldest piece(s) in the collection.
+
+
+Hint
+First, let’s find the “lowest” year:
+
+SELECT MIN(date)
+FROM met;
+The result is 1600-1700.
+
+Now, let’s try this:
+
+SELECT date, title, medium
+FROM met
+WHERE date LIKE '%1600%';
+Woah! Betty Lamp, Candlestick, and Casement Window are among the oldest pieces in the collection.
+
+5.
+Not every American decoration is from the Americas… where are they are coming from?
+
+Find the top 10 countries with the most pieces in the collection.
+
+
+Hint
+SELECT country, COUNT(*)
+FROM met
+GROUP BY country
+ORDER BY COUNT(*) DESC
+LIMIT 10;
+You can also use column reference numbers and remove NULL values:
+
+SELECT country, COUNT(*)
+FROM met
+WHERE country IS NOT NULL
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 10;
+6.
+There are all kinds of American decorative art in the Met’s collection.
+
+Find the categories HAVING more than 100 pieces.
+
+
+Hint
+SELECT category, COUNT(*)
+FROM met
+GROUP BY 1
+HAVING COUNT(*) > 100;
+7.
+Lastly, let’s look at some bling!
+
+Count the number of pieces where the medium contains ‘gold’ or ‘silver’.
+
+And sort in descending order.
+
+
+Hint
+One way to do this is:
+
+SELECT medium, COUNT(*)
+FROM met
+WHERE medium LIKE '%gold%'
+   OR medium LIKE '%silver%'
+GROUP BY 1
+ORDER BY 2 DESC;
+Notice that in the result, there are ‘Silver’, ‘Gold’, but also a lot of other mediums with these two words.
+
+If we want to be more accurate, we can use a CASE statement:
+
+SELECT CASE
+   WHEN medium LIKE '%gold%'   THEN 'Gold'
+   WHEN medium LIKE '%silver%' THEN 'Silver'
+   ELSE NULL
+  END AS 'Bling',
+  COUNT(*)
+FROM met
+WHERE Bling IS NOT NULL
+GROUP BY 1
+ORDER BY 2 DESC;
+Silver - 293
+Gold - 41
+There are a lot of silver pieces!
+
+Code Editor
+123456
+SELECT title, medium, COUNT(medium)
+FROM met
+WHERE medium LIKE '%Gold%' OR medium LIKE '%Silver%'
+GROUP BY title
+ORDER BY 3 DESC
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+The Metropolitan Museum of Art
+7/7 Complete

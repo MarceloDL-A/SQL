@@ -1,0 +1,35 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Baby Names IntroductionNarrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Baby Names Introduction
+Welcome to Code Challenge: Queries!
+
+In this Code Challenge, you will be querying data from three different datasets:
+
+Baby Names
+Restaurants
+News Headlines
+In the first one, you will be performing analysis on U.S. baby names.
+
+You’ll start with a table named babies with four columns.
+
+Thank you SSA for the data.
+
+Instructions
+When you’re ready, let’s begin!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can we see a database's schema without being given a diagram?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Image
+SQL diagram of babies.
+
+1. Baby Names Introduction
+1/13

@@ -1,0 +1,92 @@
+Learn Queries
+
+Avatar
+Queries: Order ByNarrative and Instructions
+Learn
+QUERIES
+Order By
+That’s it with WHERE and its operators. Moving on!
+
+It is often useful to list the data in our result set in a particular order.
+
+We can sort the results using ORDER BY, either alphabetically or numerically. Sorting the results often makes the data more useful and easier to analyze.
+
+For example, if we want to sort everything by the movie’s title from A through Z:
+
+SELECT *
+FROM movies
+ORDER BY name;
+ORDER BY is a clause that indicates you want to sort the result set by a particular column.
+
+name is the specified column.
+
+Sometimes we want to sort things in a decreasing order. For example, if we want to select all of the well-received movies, sorted from highest to lowest by their year:
+
+SELECT *
+FROM movies
+WHERE imdb_rating > 8
+ORDER BY year DESC;
+DESC is a keyword used in ORDER BY to sort the results in descending order (high to low or Z-A).
+
+ASC is a keyword used in ORDER BY to sort the results in ascending order (low to high or A-Z).
+
+The column that we ORDER BY doesn’t even have to be one of the columns that we’re displaying.
+
+Note: ORDER BY always goes after WHERE (if WHERE is present).
+
+Instructions
+1.
+Suppose we want to retrieve the name and year columns of all the movies, ordered by their name alphabetically.
+
+Type the following code:
+
+SELECT name, year
+FROM movies
+ORDER BY name;
+Checkpoint 2 Passed
+
+Hint
+We didn’t add ASC here because ascending order is the default.
+
+If you run this code, the result will start with ‘1408’, ‘3 Men and a Baby’ and then A-Z.
+
+2.
+Your turn! Remove the previous query.
+
+Write a new query that retrieves the name, year, and imdb_rating columns of all the movies, ordered highest to lowest by their ratings.
+
+Checkpoint 3 Passed
+
+Hint
+What are the columns that are selected and the table we are interested in?
+
+SELECT name, year, imdb_rating
+FROM movies;
+Next, let’s sort them.
+
+SELECT name, year, imdb_rating
+FROM movies
+ORDER BY imdb_rating DESC;
+We added DESC here because we want to sort it in a descending order.
+
+If you run this query, the result will start with movies with an IMDb rating of 9.0 all the way down to 4.2.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In SQL, can we apply ORDER BY with multiple columns?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+OR genre = 'comedy';
+SQLPreview
+Query Results
+Run a query to see results.
+
+12. Order By
+12/15

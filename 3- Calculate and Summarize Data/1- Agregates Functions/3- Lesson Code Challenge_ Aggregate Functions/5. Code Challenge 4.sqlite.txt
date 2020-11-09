@@ -1,0 +1,6 @@
+SELECT user_id, SUM(amount)
+FROM payments
+WHERE status = 'paid'
+GROUP BY 1
+ORDER BY 2 DESC
+;

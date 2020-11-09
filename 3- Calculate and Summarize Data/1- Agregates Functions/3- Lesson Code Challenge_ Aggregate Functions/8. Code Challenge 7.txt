@@ -1,0 +1,64 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 7Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 7
+The payments table has the following columns:
+
+id
+user_id
+amount
+status
+pay_date
+Click here for the table diagram.
+
+Instructions
+1.
+Which days in this period did Codeflix collect the most money?
+
+Your result should have two columns, pay_date and total amount, sorted by the latter descending.
+
+This should only include successful payments (status = 'paid').
+
+Use SUM(), GROUP BY, and ORDER BY.
+
+Checkpoint 2 Passed
+
+Hint
+Use SUM() to calculate the total amount paid each day and rename it to ‘total’ using AS.
+
+Be sure to GROUP BY the day and ORDER BY the total in a decreasing order.
+
+SELECT pay_date, SUM(amount)
+FROM payments
+WHERE status = 'paid'
+GROUP BY pay_date
+ORDER BY SUM(amount) DESC;
+You can also rename pay_date → day and SUM(amount) → total using AS:
+
+SELECT pay_date AS 'day',
+   SUM(amount) AS 'total'
+FROM payments
+WHERE status = 'paid'
+GROUP BY day
+ORDER BY total DESC;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123456
+SELECT pay_date, SUM(amount) AS 'amount'
+FROM payments
+WHERE status = 'paid'
+GROUP BY 1
+ORDER BY 2 DESC
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+8. Code Challenge 7
+8/10

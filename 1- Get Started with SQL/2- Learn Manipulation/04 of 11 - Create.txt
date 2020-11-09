@@ -1,0 +1,43 @@
+MANIPULATION
+Create
+CREATE statements allow us to create a new table in the database. You can use the CREATE statement anytime you want to create a new table from scratch. The statement below creates a new table named celebs.
+
+CREATE TABLE celebs (
+   id INTEGER, 
+   name TEXT, 
+   age INTEGER
+);
+1. CREATE TABLE is a clause that tells SQL you want to create a new table.
+2. celebs is the name of the table.
+3. (id INTEGER, name TEXT, age INTEGER) is a list of parameters defining each column, or attribute in the table and its data type:
+
+id is the first column in the table. It stores values of data type INTEGER
+name is the second column in the table. It stores values of data type TEXT
+age is the third column in the table. It stores values of data type INTEGER
+Instructions
+1.
+Now that you have a good understanding of SQL syntax, we can create a new table. We’ve cleared the database from the previous exercises. Confirm no celebs table exists by entering the following in the code editor:
+
+SELECT * FROM celebs;
+Look at the results. The database should be empty!
+
+Checkpoint 2 Passed
+2.
+Now that we know the database is empty, let’s create a new celebs table.
+
+In the code editor, type:
+
+CREATE TABLE celebs (
+   id INTEGER, 
+   name TEXT, 
+   age INTEGER
+); 
+We will learn how to view this table in a later exercise after we have added some data to it.
+
+Checkpoint 3 Passed
+
+Hint
+We want to create a new table named celebs. Make sure you:
+
+Insert commas after the first two columns are declared.
+End your statement with a ;.

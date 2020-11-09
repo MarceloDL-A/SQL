@@ -1,0 +1,48 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 6Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 6
+The watch_history table has the following columns:
+
+id
+user_id
+watch_date
+watch_duration_in_minutes
+Click here for the table diagram.
+
+Instructions
+1.
+To the nearest minute, how many minutes of content were streamed on Codeflix?
+
+Checkpoint 2 Passed
+
+Hint
+Use the SUM() and ROUND() functions with the watch_history table.
+
+You can treat SUM(watch_duration_in_minutes) just like any other value and place it inside the ROUND() function like so:
+
+ROUND(SUM(watch_duration_in_minutes), 0)
+Here, SUM(watch_duration_in_minutes) is the 1st argument and 0 is the 2nd argument because we want to round it to zero decimal places:
+
+SELECT ROUND(SUM(watch_duration_in_minutes), 0) 
+FROM watch_history;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+With SQL functions like ROUND , if a parameter is optional, should you still provide a value for it?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT ROUND(SUM(watch_duration_in_minutes))
+FROM watch_history;
+SQLPreview
+Query Results
+Run a query to see results.
+
+7. Code Challenge 6
+7/10

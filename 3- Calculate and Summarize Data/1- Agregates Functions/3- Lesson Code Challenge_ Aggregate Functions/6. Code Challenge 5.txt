@@ -1,0 +1,60 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 5Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 5
+The watch_history table has the following columns:
+
+id
+user_id
+watch_date
+watch_duration_in_minutes
+Click here for the table diagram.
+
+Instructions
+1.
+Generate a table of user ids and total watch duration for users who watched more than 400 minutes of content.
+
+Use SUM(), GROUP BY, and HAVING to achieve this.
+
+Checkpoint 2 Passed
+
+Hint
+Use SUM() and GROUP BY to calculate a total amount for each user_id.
+
+The HAVING allows us to filter the result to users that have a total amount greater than 400:
+
+SELECT user_id, 
+   SUM(watch_duration_in_minutes)
+FROM watch_history
+GROUP BY user_id
+HAVING SUM(watch_duration_in_minutes) > 400;
+If you give the total amount an alias, you can use it in HAVING:
+
+SELECT user_id, 
+   SUM(watch_duration_in_minutes) AS 'total_duration'
+FROM watch_history
+GROUP BY 1
+HAVING total_duration > 400;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+What's the difference between HAVING and WHERE?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12345
+SELECT user_id, sum(watch_duration_in_minutes)
+FROM watch_history
+GROUP BY 1
+HAVING sum(watch_duration_in_minutes) > 400
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+6. Code Challenge 5
+6/10

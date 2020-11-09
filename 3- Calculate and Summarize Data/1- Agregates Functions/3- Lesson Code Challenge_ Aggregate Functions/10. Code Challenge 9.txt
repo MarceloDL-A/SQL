@@ -1,0 +1,46 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 9Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 9
+The watch_history table has the following columns:
+
+id
+user_id
+watch_date
+watch_duration_in_minutes
+Click here for the table diagram.
+
+Instructions
+1.
+Of all the events in the watch_history table, what is the duration of the longest individual watch event? What is the duration of the shortest?
+
+Use one query and rename the results to max and min.
+
+Checkpoint 2 Passed
+
+Hint
+Use the MAX() function to find the longest duration event and MIN() to find the shortest.
+
+SELECT MAX(_____), MIN(_____)
+FROM ______ ;
+You can rename the results using AS.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT MAX(watch_duration_in_minutes
+) AS 'max', MIN(watch_duration_in_minutes
+) AS 'min'
+FROM watch_history;
+SQLPreview
+Query Results
+Run a query to see results.
+
+10. Code Challenge 9
+10/10

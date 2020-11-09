@@ -1,0 +1,40 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: ReviewNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Review
+Congratulations!
+
+You just learned how to use aggregate functions to perform calculations on your data. What can we generalize so far?
+
+COUNT(): count the number of rows
+SUM(): the sum of the values in a column
+MAX()/MIN(): the largest/smallest value
+AVG(): the average of the values in a column
+ROUND(): round the values in the column
+Aggregate functions combine multiple rows together to form a single value of more meaningful information.
+
+GROUP BY is a clause used with aggregate functions to combine data from one or more columns.
+HAVING limit the results of a query based on an aggregate property.
+Instructions
+Feel free to experiment a bit more with the fake_apps table before moving on!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can I get another, more advanced, “extra credit” SQL project to practice my skills?
+I want to do an even more advanced real-world SQL project.
+In SQL, are we limited to only one aggregate function per query?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1
+SQLPreview
+Query Results
+Run a query to see results.
+
+10. Review
+10/10

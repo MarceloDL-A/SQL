@@ -1,0 +1,49 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 6Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 6
+The nomnom table has the following columns:
+
+name - the restaurant name
+neighborhood - the neighborhood name
+cuisine - the cuisine type
+review - the average user review
+price - the price range
+health - the health inspection grade
+Click here for the table diagram.
+
+Instructions
+1.
+Some of the restaurants have not been inspected yet or are currently appealing their health grade score.
+
+Find the restaurants that have empty health values.
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+Empty values are indicated by NULL:
+
+SELECT _____
+FROM _______
+WHERE health IS NULL;
+Fill in the blanks to complete the query.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Are 0 and "" empty values?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+SQLPreview
+Query Results
+Run a query to see results.
+
+8. Code Challenge 6
+8/13

@@ -1,0 +1,88 @@
+Learn Queries
+
+Avatar
+Queries: Like IINarrative and Instructions
+Learn
+QUERIES
+Like II
+The percentage sign % is another wildcard character that can be used with LIKE.
+
+This statement below filters the result set to only include movies with names that begin with the letter ‘A’:
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'A%';
+% is a wildcard character that matches zero or more missing letters in the pattern. For example:
+
+A% matches all movies with names that begin with letter ‘A’
+%a matches all movies that end with ‘a’
+We can also use % both before and after a pattern:
+
+SELECT * 
+FROM movies 
+WHERE name LIKE '%man%';
+Here, any movie that contains the word ‘man’ in its name will be returned in the result.
+
+LIKE is not case sensitive. ‘Batman’ and ‘Man of Steel’ will both appear in the result of the query above.
+
+Instructions
+1.
+In the text editor, type:
+
+SELECT * 
+FROM movies
+WHERE name LIKE '%man%';
+How many movie titles contain the word ‘man’?
+
+Checkpoint 2 Passed
+
+Hint
+There are 12 movie titles that contain ‘man’.
+
+Secret level!
+
+What are the different use cases of the LIKE operator?
+
+LIKE c% finds any values that start with the letter ‘c’
+LIKE %c finds any values that end with the letter ‘c’
+LIKE %re% finds values that have ‘re’ in any position
+LIKE _a% finds any values that have the letter ‘a’ in the second index
+LIKE a_%_% finds any values that start with ‘a’ and are at least 3 characters in length.
+LIKE a%r finds any values that start with ‘a’ and end with ‘r’.
+2.
+Let’s try one more.
+
+Edit the query so that it selects all the information about the movie titles that begin with the word ‘The’.
+
+You might need a space in there!
+
+Checkpoint 3 Passed
+
+Hint
+The condition should be name LIKE 'The %':
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'The %';
+Notice how the % comes after The.
+
+There is also a space in between because we don’t want words like ‘There’, ‘They’, etc.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+When using SQL LIKE operators, how do we search for patterns containing the actual characters “%” or “_”?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT *
+FROM movies
+WHERE name LIKE 'The %';
+SQLPreview
+Query Results
+Run a query to see results.
+
+7. Like II
+7/15

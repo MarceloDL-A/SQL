@@ -1,0 +1,55 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 4Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 4
+The nomnom table has the following columns:
+
+name - the restaurant name
+neighborhood - the neighborhood name
+cuisine - the cuisine type
+review - the average user review
+price - the price range
+health - the health inspection grade
+Click here for the table diagram.
+
+Instructions
+1.
+Suppose your friend Jaime wants to go out to Japanese, but you’re on a budget.
+
+Return all the restaurants that are Japanese and $$.
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+If you want to find Japanese restaurants with exactly two dollar signs:
+
+SELECT *
+FROM nomnom
+WHERE cuisine = 'Japanese'
+  AND price = '$$';
+Remember, AND combines multiple conditions and makes the result set more specific:
+
+AND Venn Diagram
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Does the order of conditions matter if we have more than one in a query?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+ SELECT *
+ FROM nomnom
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+6. Code Challenge 4
+6/13

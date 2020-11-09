@@ -1,0 +1,58 @@
+Learn Queries
+
+Avatar
+Queries: Like INarrative and Instructions
+Learn
+QUERIES
+Like I
+LIKE can be a useful operator when you want to compare similar values.
+
+The movies table contains two films with similar titles, ‘Se7en’ and ‘Seven’.
+
+How could we select all movies that start with ‘Se’ and end with ‘en’ and have exactly one character in the middle?
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+LIKE is a special operator used with the WHERE clause to search for a specific pattern in a column.
+
+name LIKE 'Se_en' is a condition evaluating the name column for a specific pattern.
+
+Se_en represents a pattern with a wildcard character.
+
+The _ means you can substitute any individual character here without breaking the pattern. The names Seven and Se7en both match this pattern.
+
+Instructions
+1.
+Let’s test it out.
+
+In the code editor, type:
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+Checkpoint 2 Passed
+
+Hint
+Double-check your query character by character:
+
+Note the single quotes around Se_en.
+Note the underscore in it.
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can we apply the LIKE operator to values other than TEXT ?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT *
+FROM movies
+WHERE name LIKE  'Se_en';
+SQLPreview
+Query Results
+Run a query to see results.
+
+6. Like I
+6/15

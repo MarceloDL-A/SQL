@@ -1,0 +1,65 @@
+Learn Queries
+
+Avatar
+Queries: LimitNarrative and Instructions
+Learn
+QUERIES
+Limit
+We’ve been working with a fairly small table (fewer than 250 rows), but most SQL tables contain hundreds of thousands of records. In those situations, it becomes important to cap the number of rows in the result.
+
+For instance, imagine that we just want to see a few examples of records.
+
+SELECT *
+FROM movies
+LIMIT 10;
+LIMIT is a clause that lets you specify the maximum number of rows the result set will have. This saves space on our screen and makes our queries run faster.
+
+Here, we specify that the result set can’t have more than 10 rows.
+
+LIMIT always goes at the very end of the query. Also, it is not supported in all SQL databases.
+
+Instructions
+1.
+Combining your knowledge of LIMIT and ORDER BY, write a query that returns the top 3 highest rated movies.
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+First, what column(s) and table are we interested in?
+
+SELECT *
+FROM movies;
+Next, sort them by rating (descending so we start from the highest).
+
+SELECT *
+FROM movies
+ORDER BY imdb_rating DESC;
+Lastly, add a LIMIT cap.
+
+SELECT *
+FROM movies
+ORDER BY imdb_rating DESC
+LIMIT 3;
+If you run this query, the result will be ‘The Dark Knight’ at an impressive 9.0, ‘Inception’ and ‘Star Wars: Episode V - The Empire Strikes Back’ tying for second with a rating of 8.8.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In SQL, what happens if we set a LIMIT value that is greater than the total number of rows?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+OR genre = 'comedy';
+SQLPreview
+Query Results
+Run a query to see results.
+
+13. Limit
+13/15

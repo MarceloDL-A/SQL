@@ -1,0 +1,4 @@
+SELECT COUNT(*)
+FROM users
+WHERE email LIKE '%.com'
+;

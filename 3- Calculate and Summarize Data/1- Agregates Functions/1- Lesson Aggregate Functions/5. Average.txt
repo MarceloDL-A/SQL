@@ -1,0 +1,59 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: AverageNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Average
+SQL uses the AVG() function to quickly calculate the average value of a particular column.
+
+The statement below returns the average number of downloads for an app in our database:
+
+SELECT AVG(downloads)
+FROM fake_apps;
+The AVG() function works by taking a column name as an argument and returns the average value for that column.
+
+Instructions
+1.
+Calculate the average number of downloads for all the apps in the table.
+
+In the code editor, type:
+
+SELECT AVG(downloads)
+FROM fake_apps;
+Checkpoint 2 Passed
+
+Hint
+16,613.8 average downloads.
+
+2.
+Remove the previous query.
+
+Write a new query that calculates the average price for all the apps in the table.
+
+Checkpoint 3 Passed
+
+Hint
+Which column should go inside the parenthesis?
+
+ SELECT AVG(_____)
+ FROM fake_apps;
+The average price is $2.02365.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In SQL, how can we get the average of only the unique values of a column?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT AVG(price)
+FROM fake_apps;
+SQLPreview
+Query Results
+Run a query to see results.
+
+5. Average
+5/10

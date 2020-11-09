@@ -1,0 +1,70 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 9Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 9
+The news table has the following columns:
+
+id - the article identifier
+title - the article title
+publisher - the article publisher
+category - the article category
+timestamp - the time of publication
+url - the article web address
+Click here for the table diagram.
+
+Instructions
+1.
+The category column contains the article category:
+
+'b' stands for Business
+'t' stands for Technology
+What are the 20 business articles published most recently?
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+First, we filter our results to category = 'b' using a WHERE statement:
+
+SELECT *
+FROM news
+WHERE category = 'b';
+Then, we sort the entries by the most recent timestamp. We use DESC so that the most recent comes first:
+
+SELECT *
+FROM news
+WHERE category = 'b'
+ORDER BY timestamp DESC;
+Finally, cap the results to only 20:
+
+SELECT *
+FROM news
+WHERE category = 'b'
+ORDER BY timestamp DESC
+LIMIT 20;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In this code challenge, the category column values are abbreviated as ‘b’ for ‘Business’ and ‘t’ for ‘Technology’. Should we always abbreviate column values like the category column?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123456
+ SELECT *
+ FROM news
+ WHERE category = 'b' 
+ ORDER BY timestamp DESC
+ LIMIT 20
+ ;
+SQLPreview
+Query Results
+Run a query to see results.
+
+12. Code Challenge 9
+alt + <
+12/13

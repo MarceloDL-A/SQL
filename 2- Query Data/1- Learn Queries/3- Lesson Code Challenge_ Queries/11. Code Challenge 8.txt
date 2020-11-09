@@ -1,0 +1,54 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 8Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 8
+The news table has the following columns:
+
+id - the article identifier
+title - the article title
+publisher - the article publisher
+category - the article category
+timestamp - the time of publication
+url - the article web address
+Click here for the table diagram.
+
+Instructions
+1.
+Which article names have the word 'bitcoin' in it?
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+By default, the LIKE operator performs case-insensitive pattern match.
+
+This means that article names that have words like ‘bitcoin’, ‘Bitcoin’, and ‘BITCOIN’ will all be selected.
+
+WHERE title LIKE '%bitcoin%';
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can we match for a specific casing of text?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234567
+SELECT *
+FROM news
+WHERE title LIKE '%bitcoin%';
+
+
+
+
+ctrl + enter
+SQLPreview
+Query Results
+Run a query to see results.
+
+11. Code Challenge 8
+11/13

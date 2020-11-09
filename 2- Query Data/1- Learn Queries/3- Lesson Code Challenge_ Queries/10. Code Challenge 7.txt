@@ -1,0 +1,56 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 7Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 7
+The news table has the following columns:
+
+id - the article identifier
+title - the article title
+publisher - the article publisher
+category - the article category
+timestamp - the time of publication
+url - the article web address
+Click here for the table diagram.
+
+Instructions
+1.
+Order the table by title (from A-Z).
+
+Select only the title and publisher columns.
+
+Checkpoint 2 Passed
+
+Hint
+To sort the title in an ascending order:
+
+SELECT title, publisher
+FROM news
+ORDER BY title;
+If you want to be more explicit:
+
+SELECT title, publisher
+FROM news
+ORDER BY title ASC;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Do we have to select the column which we are ordering by in a SQL statement?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12345
+ SELECT title, publisher
+ FROM news
+ ORDER BY title ASC
+ ;
+
+SQLPreview
+Query Results
+Run a query to see results.
+
+10. Code Challenge 7
+10/13

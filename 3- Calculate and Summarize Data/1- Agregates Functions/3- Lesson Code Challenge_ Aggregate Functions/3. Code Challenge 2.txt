@@ -1,0 +1,57 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 2Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 2
+The users table has the following columns:
+
+id
+first_name
+last_name
+email
+password
+Click here for the table diagram.
+
+Instructions
+1.
+What are the most popular first names on Codeflix?
+
+Use COUNT(), GROUP BY, and ORDER BY to create a list of first names and occurrences within the users table.
+
+Order the data so that the most popular names are displayed first.
+
+Checkpoint 2 Passed
+
+Hint
+When you select the count of users, make sure to rename it:
+
+SELECT first_name, COUNT(*) AS 'count'
+FROM users
+GROUP BY first_name
+ORDER BY 2 DESC;
+This way, after you GROUP BY first_name, you can use ORDER BY to sort the data by the count variable.
+
+Also, because we want to display the most popular names first, DESC is needed!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+What's the difference between GROUP BY and ORDER BY?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12345
+SELECT first_name, COUNT(*) AS 'count'
+FROM users
+GROUP BY first_name
+ORDER BY 2 DESC
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+3. Code Challenge 2
+3/10

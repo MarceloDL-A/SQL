@@ -1,0 +1,55 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 1Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 1
+The babies table has the following columns:
+
+name - the name of the baby
+year - the year the name was given
+gender - the gender of the baby
+number - the number of times the name was given
+Click here for the table diagram.
+
+Instructions
+1.
+Find the number of girls who were named Lillian for the full span of time of the database.
+
+Select only the year and number columns.
+
+Checkpoint 2 Passed
+
+Hint
+One way is to:
+
+SELECT year, number
+FROM babies
+WHERE name = 'Lillian';
+If you want to be more specific and make the gender is ‘F’:
+
+SELECT year, number
+FROM babies
+WHERE name = 'Lillian' AND gender = 'F';
+Remember, AND combine multiple conditions and make the result set more specific:
+
+AND Venn Diagram
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+How can I select data lying within a certain span of time?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT year, number
+FROM babies
+WHERE name = 'Lillian';
+SQLPreview
+Query Results
+Run a query to see results.
+
+2. Code Challenge 1
+2/13

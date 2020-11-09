@@ -1,0 +1,63 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 3Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 3
+The watch_history table has the following columns:
+
+id
+user_id
+watch_date
+watch_duration_in_minutes
+Click here for the table diagram.
+
+Instructions
+1.
+The UX Research team wants to see a distribution of watch durations. They want the result to contain:
+
+duration, which is the watch event duration, rounded to the closest minute
+count, the number of watch events falling into this “bucket”
+Your result should look like:
+
+duration	count
+1.0	9
+2.0	21
+3.0	19
+…	…
+
+Use COUNT(), GROUP BY, and ORDER BY to create this result and order this data by increasing duration.
+
+Checkpoint 2 Passed
+
+Hint
+Use ROUND() to create a column which is the watch duration rounded to the nearest minute. And return a second column that has the number of watch events falling into each duration:
+
+SELECT ROUND(watch_duration_in_minutes) AS 'duration',
+   COUNT(*) AS 'count'
+_______________
+_______________
+_______________ ;
+You can then GROUP BY and ORDER BY this variable.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+When creating an alias, what's the difference between 'column AS aliasName' and 'column aliasName'?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12345
+SELECT ROUND(watch_duration_in_minutes) AS 'duration', COUNT(*) AS 'count'
+FROM watch_history
+GROUP BY 1
+ORDER BY 1
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+4. Code Challenge 3
+4/10

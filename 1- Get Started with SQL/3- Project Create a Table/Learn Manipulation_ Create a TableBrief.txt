@@ -1,0 +1,174 @@
+Learn Manipulation
+
+Avatar
+Learn Manipulation: Create a TableBrief
+Objective
+GET STARTED WITH SQL
+Create a Table
+In this project, you will create your own friends table and add/delete data from it!
+
+The instructions provided are a general guideline. Feel free to add more columns, insert more data, and create more tables.
+
+If you get stuck during this project or would like to see an experienced developer work through it, click “Get Help“ to see a project walkthrough video.
+
+Tasks
+9/9 Complete
+Mark the tasks as complete by checking them off
+1.
+Create a table named friends with three columns:
+
+id that stores INTEGER
+name that stores TEXT
+birthday that stores DATE
+
+Hint
+The CREATE TABLE statement is used to create a new table in the database:
+
+CREATE TABLE table_name (
+   column1 DATA_TYPE,
+   column2 DATA_TYPE,
+   column3 DATA_TYPE
+);
+Don’t forget the ; at the end!
+
+Your code should look something like:
+
+CREATE TABLE friends (
+   id INTEGER,
+   name TEXT,
+   birthday DATE
+);
+2.
+Beneath your current code, add Jane Doe to friends.
+
+Her birthday is May 30th, 1990.
+
+
+Hint
+The INSERT INTO statement is used to insert new records into a table:
+
+INSERT INTO table_name (column1, column2, column3) 
+VALUES (value1, value2, value3);
+Your code should look something like:
+
+INSERT INTO friends (id, name, birthday) 
+VALUES (1, 'Jane Doe', '1990-05-30');
+For the `DATE` data type, the format is YYYY-MM-DD.
+
+3.
+Let’s make sure that Jane has been added to the database:
+
+SELECT * 
+FROM friends;
+Check for two things:
+
+Is friends table created?
+Is Jane Doe added to it?
+
+Hint
+SELECT * indicates that we want to select all columns.
+FROM friends indicates the table we are interested in.
+; ends a SQL command.
+The result should have three columns (id, name, birthday) and one row.
+
+4.
+Let’s move on!
+
+Add two of your friends to the table.
+
+Insert an id, name, and birthday for each of them.
+
+
+Hint
+Your code should look something like:
+
+INSERT INTO friends (id, name, birthday) 
+VALUES (2, 'BFF One', 'YYYY-MM-DD');
+
+INSERT INTO friends (id, name, birthday) 
+VALUES (3, 'BFF Two', 'YYYY-MM-DD');
+5.
+Jane Doe just got married! Her new last name is “Smith”.
+
+Update her record in friends.
+
+
+Hint
+The UPDATE statement is used to modify the existing records in a table:
+
+UPDATE table_name
+SET column1 = value1
+WHERE condition;
+Your code should look something like:
+
+UPDATE friends
+SET name = 'Jane Smith'
+WHERE id = 1;
+6.
+Add a new column named email.
+
+
+Hint
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table:
+
+ALTER TABLE table_name
+ADD COLUMN column DATA_TYPE;
+Your code should look something like:
+
+ALTER TABLE friends 
+ADD COLUMN email TEXT; 
+7.
+Update the email address for everyone in your table.
+
+Jane Smith’s email is jane@codecademy.com.
+
+
+Hint
+To update Jane’s email:
+
+UPDATE friends
+SET email = 'jane@codecademy.com'
+WHERE id = 1;
+And do the same for both of your friends.
+
+8.
+Wait, Jane Smith is not a real person.
+
+Remove her from friends.
+
+
+Hint
+DELETE FROM friends
+WHERE id = 1;
+:(
+
+9.
+Great job! Let’s take a look at the result one last time:
+
+SELECT * 
+FROM friends;
+
+Hint
+The result should have four columns (id, name, birthday, email) and two rows.
+
+If you are feeling ambitious, try adding a phone column, an instagram column, and more of your buddies to the table!
+
+Code Editor
+123456789101112131415161718192021222324
+CREATE TABLE friends (
+  id INTEGER,
+  name TEXT,
+  birthday DATE
+);
+
+INSERT INTO friends
+VALUES (1, 'Jane Doe', '1990-05-30');
+
+
+
+SQLPreview
+Query Results
+Run a query to see results.
+
+Create a Table
+9/9 Complete

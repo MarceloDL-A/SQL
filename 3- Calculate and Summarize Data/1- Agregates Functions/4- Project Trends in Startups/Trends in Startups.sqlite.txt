@@ -1,0 +1,11 @@
+SELECT location, AVG(employees)
+FROM startups
+GROUP BY location
+HAVING AVG(employees) > 500
+ORDER BY 2 DESC
+;
+
+SELECT *
+FROM startups
+;
+

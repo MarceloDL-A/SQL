@@ -1,0 +1,31 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Restaurants IntroductionNarrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Restaurants Introduction
+Next up, you will be querying data on restaurants:
+
+Baby Names
+Restaurants
+News Headlines
+We need your help to answer some questions and find the best dinner spots in the city!
+
+You’ll work with a table named nomnom with six columns.
+
+Instructions
+When you’re ready, let’s begin!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Is there a limit to the number of columns a table can have?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Image
+Illustration of the table "nomnom" and its six columns: name, neighborhood, cuisine, review, price, and health
+
+5. Restaurants Introduction
+5/13

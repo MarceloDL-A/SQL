@@ -1,0 +1,8 @@
+SELECT timestamp AS 'Data', ROUND(AVG(score)) AS 'Score médio', COUNT(*),
+strftime('%H', timestamp) AS 'Horas'
+FROM hacker_news
+WHERE timestamp NOT NULL
+GROUP BY 1
+
+ORDER BY score DESC;
+

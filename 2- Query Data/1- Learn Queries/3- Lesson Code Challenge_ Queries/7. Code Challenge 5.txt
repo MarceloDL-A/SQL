@@ -1,0 +1,56 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 5Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 5
+The nomnom table has the following columns:
+
+name - the restaurant name
+neighborhood - the neighborhood name
+cuisine - the cuisine type
+review - the average user review
+price - the price range
+health - the health inspection grade
+Click here for the table diagram.
+
+Instructions
+1.
+Your roommate Bevers can’t remember the exact name of a restaurant he went to but he knows it contains the word ‘noodle’ in it.
+
+Can you find it for him using a query?
+
+Select all the columns.
+
+Checkpoint 2 Passed
+
+Hint
+% is a wildcard character that matches zero or more missing letters in the pattern.
+
+To find the restaurant names that contain the word ‘noodle’:
+
+SELECT ___
+FROM _____
+WHERE name LIKE '%noodle%';
+Fill in the blanks to complete the query.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+What if we are trying to match on a specific text length?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+ SELECT *
+ FROM nomnom
+ WHERE name LIKE '%noodle%'
+ ;
+SQLPreview
+Query Results
+Run a query to see results.
+
+7. Code Challenge 5
+7/13

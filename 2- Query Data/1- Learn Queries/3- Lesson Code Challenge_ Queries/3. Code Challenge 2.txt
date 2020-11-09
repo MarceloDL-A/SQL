@@ -1,0 +1,56 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 2Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 2
+The babies table has the following columns:
+
+name - the name of the baby
+year - the year the name was given
+gender - the gender of the baby
+number - the number of times the name was given
+Click here for the table diagram.
+
+Instructions
+1.
+Find 20 distinct names that start with ‘S’.
+
+Select only the name column.
+
+Checkpoint 2 Passed
+
+Hint
+First, find all the distinct names that start with ‘S’:
+
+SELECT DISTINCT name
+FROM babies
+WHERE name LIKE 'S%';
+Notice how the % is placed after ‘S’.
+
+Next, use LIMIT to cap the result to 20:
+
+SELECT DISTINCT name
+FROM babies
+WHERE name LIKE 'S%'
+LIMIT 20;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Does casing matter when selecting the names?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT DISTINCT name
+FROM babies
+WHERE name LIKE 'S%'
+LIMIT 20;
+SQLPreview
+Query Results
+Run a query to see results.
+
+3. Code Challenge 2
+3/13

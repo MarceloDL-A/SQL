@@ -1,0 +1,5 @@
+SELECT user_id, sum(watch_duration_in_minutes)
+FROM watch_history
+GROUP BY 1
+HAVING sum(watch_duration_in_minutes) > 400
+;

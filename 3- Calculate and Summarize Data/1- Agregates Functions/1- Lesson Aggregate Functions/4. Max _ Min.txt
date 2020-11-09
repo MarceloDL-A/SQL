@@ -1,0 +1,61 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: Max / MinNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Max / Min
+The MAX() and MIN() functions return the highest and lowest values in a column, respectively.
+
+How many downloads does the most popular app have?
+
+SELECT MAX(downloads)
+FROM fake_apps;
+The most popular app has 31,090 downloads!
+
+MAX() takes the name of a column as an argument and returns the largest value in that column. Here, we returned the largest value in the downloads column.
+
+MIN() works the same way but it does the exact opposite; it returns the smallest value.
+
+Instructions
+1.
+What is the least number of times an app has been downloaded?
+
+In the code editor, type:
+
+SELECT MIN(downloads)
+FROM fake_apps;
+Checkpoint 2 Passed
+
+Hint
+1,387 downloads.
+
+2.
+Delete the previous query.
+
+Write a new query that returns the price of the most expensive app.
+
+Checkpoint 3 Passed
+
+Hint
+SELECT MAX(price)
+FROM fake_apps;
+$14.99 is the price of the most expensive app.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+If multiple rows have the minimum or maximum value, which one is returned when using MAX / MIN ?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT MAX(price)
+FROM fake_apps;
+SQLPreview
+Query Results
+Run a query to see results.
+
+4. Max / Min
+4/10

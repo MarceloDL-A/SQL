@@ -1,0 +1,31 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: News Headlines IntroductionNarrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+News Headlines Introduction
+Here is the last dataset of the Code Challenge #1:
+
+Baby Names
+Restaurants
+News Headlines
+There is a table called news with six columns.
+
+It is full of news article headlines from different publishing companies!
+
+Instructions
+When you’re ready, let’s begin!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In the context of this lesson, are identifiers, like the id column, always numerical values?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Image
+alt text
+
+9. News Headlines Introduction
+9/13

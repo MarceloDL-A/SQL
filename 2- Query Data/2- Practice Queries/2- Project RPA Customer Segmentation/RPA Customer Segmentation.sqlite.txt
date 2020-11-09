@@ -1,0 +1,3 @@
+ SELECT *
+ FROM users
+ WHERE campaign IS NOT NULL AND test IS NOT NULL;

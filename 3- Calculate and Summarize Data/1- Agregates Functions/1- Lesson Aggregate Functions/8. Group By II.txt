@@ -1,0 +1,80 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: Group By IINarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Group By II
+Sometimes, we want to GROUP BY a calculation done on a column.
+
+For instance, we might want to know how many movies have IMDb ratings that round to 1, 2, 3, 4, 5. We could do this using the following syntax:
+
+SELECT ROUND(imdb_rating),
+   COUNT(name)
+FROM movies
+GROUP BY ROUND(imdb_rating)
+ORDER BY ROUND(imdb_rating);
+However, this query may be time-consuming to write and more prone to error.
+
+SQL lets us use column reference(s) in our GROUP BY that will make our lives easier.
+
+1 is the first column selected
+2 is the second column selected
+3 is the third column selected
+and so on.
+
+The following query is equivalent to the one above:
+
+SELECT ROUND(imdb_rating),
+   COUNT(name)
+FROM movies
+GROUP BY 1
+ORDER BY 1;
+Here, the 1 refers to the first column in our SELECT statement, ROUND(imdb_rating).
+
+Instructions
+1.
+Suppose we have the query below:
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY category, price;
+Write the exact query, but use column reference numbers instead of column names after GROUP BY.
+
+Checkpoint 2 Passed
+
+Hint
+These numbers represent the selected columns:
+
+1 refers to category.
+2 refers to price.
+3 refers to AVG(downloads)
+Now, change the GROUP BY with numbers:
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY 1, 2;
+Note: Even if you use column names instead of numbers, it will still be correct because these two queries are exactly the same!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Do column references have to follow the order the columns are listed in the SELECT ?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT category, price, AVG(downloads)
+FROM fake_apps
+GROUP BY category, price;
+SQLPreview
+Query Results
+Run a query to see results.
+
+8. Group By II
+8/10

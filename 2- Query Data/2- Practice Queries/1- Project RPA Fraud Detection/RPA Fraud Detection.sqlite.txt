@@ -1,0 +1,3 @@
+ SELECT * 
+ FROM transaction_data
+ WHERE ip_address LIKE '120%' AND full_name LIKE 'John%';

@@ -1,0 +1,82 @@
+Learn Queries
+
+Avatar
+Queries: BetweenNarrative and Instructions
+Learn
+QUERIES
+Between
+The BETWEEN operator is used in a WHERE clause to filter the result set within a certain range. It accepts two values that are either numbers, text or dates.
+
+For example, this statement filters the result set to only include movies with years from 1990 up to, and including 1999.
+
+SELECT *
+FROM movies
+WHERE year BETWEEN 1990 AND 1999;
+When the values are text, BETWEEN filters the result set for within the alphabetical range.
+
+In this statement, BETWEEN filters the result set to only include movies with names that begin with the letter ‘A’ up to, but not including ones that begin with ‘J’.
+
+SELECT *
+FROM movies
+WHERE name BETWEEN 'A' AND 'J';
+However, if a movie has a name of simply ‘J’, it would actually match. This is because BETWEEN goes up to the second value — up to ‘J’. So the movie named ‘J’ would be included in the result set but not ‘Jaws’.
+
+Instructions
+1.
+Using the BETWEEN operator, write a query that selects all information about movies whose name begins with the letters ‘D’, ‘E’, and ‘F’.
+
+Checkpoint 2 Passed
+
+Hint
+This should be very similar to the second query in the narrative.
+
+BETWEEN 'D' AND 'G' should be the condition:
+
+SELECT *
+FROM movies
+WHERE name BETWEEN 'D' AND 'G';
+This will return all the names that begin with ‘D’, ‘E’, and ‘F’.
+
+BETWEEN 'D' AND 'F' should not be the condition because it would return names that begin with ‘D’ and ‘E’, but not ‘F’ (unless there was a movie with the single letter name of “F”).
+
+And don’t forget to capitalize D and G!
+
+BETWEEN is case-sensitive. If the condition is BETWEEN 'a' AND 'z', it would only return lowercase (a-z) results and not uppercase (A-Z).
+
+2.
+Remove the previous query.
+
+Using the BETWEEN operator, write a new query that selects all information about movies that were released in the 1970’s.
+
+Checkpoint 3 Passed
+
+Hint
+In this statement, the BETWEEN operator is being used to filter the result set to only include movies with years in 1970-1979:
+
+SELECT *
+FROM movies
+WHERE year BETWEEN 1970 AND 1979;
+Remember, BETWEEN two numbers is inclusive of the second number.
+
+Notice that there is a movie from 1979 in the result.
+
+Also, numeric values (INTEGER or REAL data types) don’t need to be wrapped with single quotes, whereas TEXT values do.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In SQL, when applying the BETWEEN operator on a range of TEXT values, each value must be compared somehow to be ordered correctly. What kind of comparison is done on TEXT values?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT *
+FROM movies
+WHERE year BETWEEN '1970' AND '1979';
+SQLPreview
+Query Results
+Run a query to see results.
+
+9. Between
+9/15

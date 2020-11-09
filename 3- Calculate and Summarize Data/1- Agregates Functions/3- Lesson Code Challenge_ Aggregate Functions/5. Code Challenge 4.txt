@@ -1,0 +1,74 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 4Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 4
+The payments table has the following columns:
+
+id
+user_id
+amount
+status
+pay_date
+Click here for the table diagram.
+
+Instructions
+1.
+Find all the users that have successfully made a payment to Codeflix and find their total amount paid.
+
+Sort them by their total payments (from high to low).
+
+Use SUM(), WHERE, GROUP BY, and ORDER BY.
+
+Checkpoint 2 Passed
+
+Hint
+Group the users and calculate their total payments by using SUM().
+
+Filter the successful payments by using WHERE with the condition status = 'paid'.
+
+Sort the total payments in a descending order using ORDER BY and DESC.
+
+SELECT user_id, SUM(amount)
+FROM payments
+WHERE status = 'paid'
+GROUP BY user_id
+ORDER BY SUM(amount) DESC;
+You can also rename the SUM(amount) column:
+
+SELECT user_id, SUM(amount) AS 'total'
+FROM payments
+WHERE status = 'paid'
+GROUP BY user_id
+ORDER BY total DESC;
+And add column reference numbers:
+
+SELECT user_id, SUM(amount) AS 'total'
+FROM payments
+WHERE status = 'paid'
+GROUP BY 1
+ORDER BY 2 DESC;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+What do the numbers refer to in a statement like 'GROUP BY 1' or 'ORDER BY 2'?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234567
+SELECT user_id, SUM(amount)
+FROM payments
+WHERE status = 'paid'
+GROUP BY 1
+ORDER BY 2 DESC
+;
+
+SQLPreview
+Query Results
+Run a query to see results.
+
+5. Code Challenge 4
+5/10

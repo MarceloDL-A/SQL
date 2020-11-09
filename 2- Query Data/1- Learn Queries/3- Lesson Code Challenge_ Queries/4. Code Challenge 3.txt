@@ -1,0 +1,62 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: Code Challenge 3Narrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+Code Challenge 3
+The babies table has the following columns:
+
+name - the name of the baby
+year - the year the name was given
+gender - the gender of the baby
+number - the number of times the name was given
+Click here for the table diagram.
+
+Instructions
+1.
+What are the top 10 names in 1880?
+
+Select the name, gender, and number columns.
+
+Checkpoint 2 Passed
+
+Hint
+First, we need to specify the year using a WHERE clause:
+
+SELECT name, gender, number
+FROM babies
+WHERE year = 1880;
+Then, we need to ORDER BY the number of times that name was given. We also need to add DESC so that we start with the most popular names:
+
+SELECT name, gender, number
+FROM babies
+WHERE year = 1880
+ORDER BY number DESC;
+Finally, we need to limit our results to the first 10 results:
+
+SELECT name, gender, number
+FROM babies
+WHERE year = 1880
+ORDER BY number DESC
+LIMIT 10;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In the context of this code challenge, if there are less than 20 distinct names that start with ‘S’, what happens if our LIMIT value is greater than this?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12345
+SELECT name, gender, number
+FROM babies
+WHERE year = 1880
+ORDER BY number DESC
+LIMIT 10;
+SQLPreview
+Query Results
+Run a query to see results.
+
+4. Code Challenge 3
+4/13

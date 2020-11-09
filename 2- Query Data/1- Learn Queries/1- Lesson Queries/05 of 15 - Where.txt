@@ -1,0 +1,85 @@
+Learn Queries
+
+Avatar
+Queries: WhereNarrative and Instructions
+Learn
+QUERIES
+Where
+We can restrict our query results using the WHERE clause in order to obtain only the information we want.
+
+Following this format, the statement below filters the result set to only include top rated movies (IMDb ratings greater than 8):
+
+SELECT *
+FROM movies
+WHERE imdb_rating > 8;
+How does it work?
+
+WHERE clause filters the result set to only include rows where the following condition is true.
+
+imdb_rating > 8 is the condition. Here, only rows with a value greater than 8 in the imdb_rating column will be returned.
+
+The > is an operator. Operators create a condition that can be evaluated as either true or false.
+
+Comparison operators used with the WHERE clause are:
+
+= equal to
+!= not equal to
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+There are also some special operators that we will learn more about in the upcoming exercises.
+
+Instructions
+1.
+Suppose we want to take a peek at all the not-so-well-received movies in the database.
+
+In the code editor, type:
+
+SELECT * 
+FROM movies 
+WHERE imdb_rating < 5;
+Ouch!
+
+Checkpoint 2 Passed
+
+Hint
+We are trying to retrieve all the movies with ratings lower than 5.
+
+Common errors:
+
+Missing underscore in the imdb_rating column name.
+Missing ; at the end.
+2.
+Edit the query so that it will now retrieve all the recent movies, specifically those that were released after 2014.
+
+Select all the columns using *.
+
+Checkpoint 3 Passed
+
+Hint
+The condition here would be year > 2014
+
+If you add the condition after the WHERE clause, it would look like:
+
+SELECT *
+FROM movies
+WHERE year > 2014;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can we compare values of two columns in a WHERE clause?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT *
+FROM movies
+WHERE year > 2014;
+SQLPreview
+Query Results
+Run a query to see results.
+
+5. Where
+5/15

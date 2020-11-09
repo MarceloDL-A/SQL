@@ -1,0 +1,84 @@
+Learn Queries
+
+Avatar
+Queries: AndNarrative and Instructions
+Learn
+QUERIES
+And
+Sometimes we want to combine multiple conditions in a WHERE clause to make the result set more specific and useful.
+
+One way of doing this is to use the AND operator. Here, we use the AND operator to only return 90’s romance movies.
+
+SELECT * 
+FROM movies
+WHERE year BETWEEN 1990 AND 1999
+   AND genre = 'romance';
+year BETWEEN 1990 AND 1999 is the 1st condition.
+
+genre = 'romance' is the 2nd condition.
+
+AND combines the two conditions.
+
+AND Venn Diagram
+
+With AND, both conditions must be true for the row to be included in the result.
+
+Instructions
+1.
+In the previous exercise, we retrieved every movie released in the 1970’s.
+
+Now, let’s retrieve every movie released in the 70’s, that’s also well received.
+
+In the code editor, type:
+
+SELECT *
+FROM movies
+WHERE year BETWEEN 1970 AND 1979
+  AND imdb_rating > 8;
+Checkpoint 2 Passed
+
+Hint
+We are putting AND imdb_rating > 8 on another line and indented just so it is easier to read.
+
+2.
+Remove the previous query.
+
+Suppose we have a picky friend who only wants to watch old horror films.
+
+Using AND, write a new query that selects all movies made prior to 1985 that are also in the horror genre.
+
+Checkpoint 3 Passed
+
+Hint
+What are the two conditions?
+
+year < 1985
+genre = 'horror'
+So your query should look like:
+
+SELECT *
+FROM movies
+WHERE year < 1985
+   AND genre = 'horror';
+We indented and placed AND genre = 'horror' on another line just so it is easier to read.
+
+Also, numeric values (1985) don’t need to be wrapped with single quotes, whereas string values do ('horror').
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Is the AND used in BETWEEN the same as the AND operator used between multiple conditions?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT *
+FROM movies
+WHERE year < 1985 AND genre = 'horror';
+SQLPreview
+Query Results
+Run a query to see results.
+
+10. And
+10/15

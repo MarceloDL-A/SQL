@@ -1,0 +1,48 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 8Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 8
+The payments table has the following columns:
+
+id
+user_id
+amount
+status
+pay_date
+Click here for the table diagram.
+
+Instructions
+1.
+When users successfully pay Codeflix (status = 'paid'), what is the average payment amount?
+
+Checkpoint 2 Passed
+
+Hint
+Use the AVG() function after selecting the correct rows from payments:
+
+SELECT AVG(______)
+FROM payments
+WHERE status = 'paid';
+You don’t need GROUP BY, ORDER BY, and HAVING for this query!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+How does the average function work?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123
+SELECT AVG(amount)
+FROM payments
+WHERE status = 'paid';
+SQLPreview
+Query Results
+Run a query to see results.
+
+9. Code Challenge 8
+9/10

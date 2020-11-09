@@ -1,0 +1,42 @@
+Learn Queries
+
+Avatar
+Code Challenge: Queries: The EndNarrative and Instructions
+Learn
+CODE CHALLENGE: QUERIES
+The End
+You just completed Code Challenge: Queries!
+
+Feel free to experiment more with all three tables. For example:
+
+Is your name in babies?
+How many babies were given your name?
+What are the top 5 restaurants in nomnom?
+What are the top 5 Chinese restaurants?
+Which articles are from Wall Street Journal in news?
+Which technology articles are from Wall Street Journal?
+Instructions
+Once you are ready, let’s code on!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Where can we access other free datasets?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+123456
+ SELECT *
+ FROM news
+ WHERE category = 'b' 
+ ORDER BY timestamp DESC
+ LIMIT 20
+ ;
+SQLPreview
+Query Results
+Run a query to see results.
+
+13. The End
+alt + <
+13/13

@@ -1,0 +1,70 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: RoundNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Round
+By default, SQL tries to be as precise as possible without rounding. We can make the result table easier to read using the ROUND() function.
+
+ROUND() function takes two arguments inside the parenthesis:
+
+a column name
+an integer
+It rounds the values in the column to the number of decimal places specified by the integer.
+
+SELECT ROUND(price, 0)
+FROM fake_apps;
+Here, we pass the column price and integer 0 as arguments. SQL rounds the values in the column to 0 decimal places in the output.
+
+Instructions
+1.
+Let’s return the name column and a rounded price column.
+
+In the code editor, type:
+
+SELECT name, ROUND(price, 0)
+FROM fake_apps;
+Checkpoint 2 Passed
+
+Hint
+We are selecting ROUND(price, 0) as the second column in this query.
+
+2.
+Remove the previous query.
+
+In the last exercise, we were able to get the average price of an app ($2.02365) using this query:
+
+SELECT AVG(price)
+FROM fake_apps;
+Now, let’s edit this query so that it rounds this result to 2 decimal places.
+
+This is a tricky one!
+
+Checkpoint 3 Passed
+
+Hint
+You can treat AVG(price) just like any other value and place it inside the ROUND function like so:
+
+ROUND(AVG(price), 2)
+Here, AVG(price) is the 1st argument and 2 is the 2nd argument because we want to round it to two decimal places:
+
+SELECT ROUND(AVG(price), 2)
+FROM fake_apps;
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Does the ROUND() function round up?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT ROUND(AVG(price), 2)
+FROM fake_apps;
+SQLPreview
+Query Results
+Run a query to see results.
+
+6. Round
+6/10

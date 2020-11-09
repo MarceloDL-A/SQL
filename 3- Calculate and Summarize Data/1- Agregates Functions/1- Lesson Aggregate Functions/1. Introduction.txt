@@ -1,0 +1,52 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: IntroductionNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Introduction
+We’ve learned how to write queries to retrieve information from the database. Now, we are going to learn how to perform calculations using SQL.
+
+Calculations performed on multiple rows of a table are called aggregates.
+
+In this lesson, we have given you a table named fake_apps which is made up of fake mobile applications data.
+
+Here is a quick preview of some important aggregates that we will cover in the next five exercises:
+
+COUNT(): count the number of rows
+SUM(): the sum of the values in a column
+MAX()/MIN(): the largest/smallest value
+AVG(): the average of the values in a column
+ROUND(): round the values in the column
+Let’s get started!
+
+Instructions
+1.
+Before getting started, take a look at the data in the fake_apps table.
+
+In the code editor, type the following:
+
+SELECT *
+FROM fake_apps;
+What are the column names?
+
+Checkpoint 2 Passed
+
+Hint
+The column names are id, name, category, downloads, and price.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In general, what is a function?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1
+SQLPreview
+Query Results
+Run a query to see results.
+
+1. Introduction
+1/10

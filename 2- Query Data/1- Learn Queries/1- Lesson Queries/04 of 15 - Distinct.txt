@@ -1,0 +1,91 @@
+Learn Queries
+
+Avatar
+Queries: DistinctNarrative and Instructions
+Learn
+QUERIES
+Distinct
+When we are examining data in a table, it can be helpful to know what distinct values exist in a particular column.
+
+DISTINCT is used to return unique values in the output. It filters out all duplicate values in the specified column(s).
+
+For instance,
+
+SELECT tools 
+FROM inventory;
+might produce:
+
+tools
+Hammer
+Nails
+Nails
+Nails
+
+By adding DISTINCT before the column name,
+
+SELECT DISTINCT tools 
+FROM inventory;
+the result would now be:
+
+tools
+Hammer
+Nails
+
+Filtering the results of a query is an important skill in SQL. It is easier to see the different possible genres in the movie table after the data has been filtered than to scan every row in the table.
+
+Instructions
+1.
+Let’s try it out. In the code editor, type:
+
+SELECT DISTINCT genre 
+FROM movies;
+What are the unique genres?
+
+Checkpoint 2 Passed
+
+Hint
+The different genres are:
+
+action
+comedy
+horror
+romance
+drama
+∅
+The empty set symbol ∅ is just an empty value. DISTINCT recognize empty values, too.
+
+2.
+Now, change the code so we return the unique values of the year column instead.
+
+Checkpoint 3 Passed
+
+Hint
+Suppose we only want to query the distinct results from a column. We will use the syntax:
+
+SELECT DISTINCT column
+FROM table_name;
+Following this format, the code below returns the unique values of the year column:
+
+SELECT DISTINCT year 
+FROM movies;
+In the result, there should only be one column with all the distinct years.
+
+Note: You might’ve noticed how there appears to be an empty set symbol ∅ near the bottom of the results (right below 1987 and above 2017). It is not a bug! DISTINCT recognize empty values, too.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can we apply DISTINCT to a SELECT query with multiple columns?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT  DISTINCT year
+FROM movies;
+SQLPreview
+Query Results
+Run a query to see results.
+
+4. Distinct
+4/15

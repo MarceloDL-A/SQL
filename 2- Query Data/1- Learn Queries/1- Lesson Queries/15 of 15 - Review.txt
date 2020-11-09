@@ -1,0 +1,46 @@
+Learn Queries
+
+Avatar
+Queries: ReviewNarrative and Instructions
+Learn
+QUERIES
+Review
+Congratulations!
+
+We just learned how to query data from a database using SQL. We also learned how to filter queries to make the information more specific and useful.
+
+Let’s summarize:
+
+SELECT is the clause we use every time we want to query information from a database.
+AS renames a column or table.
+DISTINCT return unique values.
+WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.
+LIKE and BETWEEN are special operators.
+AND and OR combines multiple conditions.
+ORDER BY sorts the result.
+LIMIT specifies the maximum number of rows that the query will return.
+CASE creates different outputs.
+Instructions
+Feel free to experiment a bit more with the movies table before moving on!
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+Can I have even more practice with an independent project on what I’ve learned so far?
+In SQL, is it good practice to always include an id column in every table?
+How can I learn and practice outside Codecademy in general?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+OR genre = 'comedy';
+SQLPreview
+Query Results
+Run a query to see results.
+
+15. Review
+15/15

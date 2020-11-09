@@ -1,0 +1,68 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: CountNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Count
+The fastest way to calculate how many rows are in a table is to use the COUNT() function.
+
+COUNT() is a function that takes the name of a column as an argument and counts the number of non-empty values in that column.
+
+SELECT COUNT(*)
+FROM table_name;
+Here, we want to count every row, so we pass * as an argument inside the parenthesis.
+
+Instructions
+1.
+Let’s count how many apps are in the table.
+
+In the code editor, run:
+
+SELECT COUNT(*) 
+FROM fake_apps;
+Checkpoint 2 Passed
+
+Hint
+There are 200 apps.
+
+Common errors:
+
+Missing parenthesis.
+Missing ;.
+2.
+Add a WHERE clause in the previous query to count how many free apps are in the table.
+
+Checkpoint 3 Passed
+
+Hint
+Remember the WHERE statement?
+
+The following code should go inside the previous query, before the semicolon:
+
+SELECT COUNT(*) 
+FROM fake_apps
+WHERE price = 0;
+WHERE indicates we want to only include rows where the following condition is true.
+price = 0 is the condition.
+There are 73 free apps in the table.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+When using the SQL COUNT() function for a column, does it include duplicate values?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT COUNT(*)
+FROM fake_apps
+WHERE price = 0;
+
+SQLPreview
+Query Results
+Run a query to see results.
+
+2. Count
+2/10

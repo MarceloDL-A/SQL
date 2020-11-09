@@ -1,0 +1,51 @@
+Aggregate Functions
+
+Avatar
+Code Challenge: Aggregate Functions: Code Challenge 1Narrative and Instructions
+Learn
+CODE CHALLENGE: AGGREGATE FUNCTIONS
+Code Challenge 1
+The users table has the following columns:
+
+id
+first_name
+last_name
+email
+password
+Click here for the table diagram.
+
+Instructions
+1.
+Use COUNT() and a LIKE operator to determine the number of users that have an email ending in ‘.com’.
+
+Checkpoint 2 Passed
+
+Hint
+As an example,
+
+SELECT * 
+FROM users 
+WHERE first_name LIKE '%ny';
+will give you all the users whose names end in ny.
+
+Using COUNT(*) instead of * will return the number of rows that matches the criteria.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+What's the difference between COUNT(1), COUNT(*), and COUNT(column_name)?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT COUNT(*)
+FROM users
+WHERE email LIKE '%.com'
+;
+SQLPreview
+Query Results
+Run a query to see results.
+
+2. Code Challenge 1
+2/10

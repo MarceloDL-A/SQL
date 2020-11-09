@@ -1,0 +1,47 @@
+Aggregate Functions
+
+Avatar
+Aggregate Functions: SumNarrative and Instructions
+Learn
+AGGREGATE FUNCTIONS
+Sum
+SQL makes it easy to add all values in a particular column using SUM().
+
+SUM() is a function that takes the name of a column as an argument and returns the sum of all the values in that column.
+
+What is the total number of downloads for all of the apps combined?
+
+SELECT SUM(downloads)
+FROM fake_apps;
+This adds all values in the downloads column.
+
+Instructions
+1.
+Let’s find out the answer!
+
+In the code editor, type:
+
+SELECT SUM(downloads)
+FROM fake_apps;
+Checkpoint 2 Passed
+
+Hint
+There are 3,322,760 total downloads.
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+When do we use the COUNT() function or the SUM() function?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+12
+SELECT SUM(downloads)
+FROM fake_apps;
+SQLPreview
+Query Results
+Run a query to see results.
+
+3. Sum
+3/10

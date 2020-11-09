@@ -1,0 +1,6 @@
+SELECT title, medium, COUNT(medium)
+FROM met
+WHERE medium LIKE '%Gold%' OR medium LIKE '%Silver%'
+GROUP BY title
+ORDER BY 3 DESC
+;

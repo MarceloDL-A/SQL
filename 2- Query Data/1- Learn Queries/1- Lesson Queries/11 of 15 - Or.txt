@@ -1,0 +1,83 @@
+Learn Queries
+
+Avatar
+Queries: OrNarrative and Instructions
+Learn
+QUERIES
+Or
+Similar to AND, the OR operator can also be used to combine multiple conditions in WHERE, but there is a fundamental difference:
+
+AND operator displays a row if all the conditions are true.
+OR operator displays a row if any condition is true.
+Suppose we want to check out a new movie or something action-packed:
+
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
+year > 2014 is the 1st condition.
+
+genre = 'action' is the 2nd condition.
+
+OR combines the two conditions.
+
+OR Venn Diagram
+
+With OR, if any of the conditions are true, then the row is added to the result.
+
+Instructions
+1.
+Let’s test this out:
+
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
+Checkpoint 2 Passed
+
+Hint
+This retrieves all the movies released after 2014 or in the action genre.
+
+We are putting OR genre = 'action' on another line and indented just so it is easier to read.
+
+2.
+Suppose we are in the mood for a good laugh or a good cry.
+
+Using OR, write a query that returns all movies that are either a romance or a comedy.
+
+Checkpoint 3 Passed
+
+Hint
+What are the two conditions?
+
+genre = 'romance'
+genre = 'comedy'
+So your query should look like:
+
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+   OR genre = 'comedy';
+We indented and placed OR genre = 'comedy' on another line just so it is easier to read.
+
+Are there any good romantic comedies in the list?
+
+Concept Review
+Want to quickly review some of the concepts you’ve been learning? Take a look at this material's cheatsheet!
+Community Forums
+Here are some helpful links to the top questions asked by coders about this exercise:
+
+In a SQL query, can we write conditions that utilize both AND and OR ?
+Still have questions? View this exercise's thread in the Codecademy Forums.
+Code Editor
+1234
+SELECT *
+FROM movies
+WHERE genre = 'romance'
+OR genre = 'comedy';
+SQLPreview
+Query Results
+Run a query to see results.
+
+11. Or
+11/15
