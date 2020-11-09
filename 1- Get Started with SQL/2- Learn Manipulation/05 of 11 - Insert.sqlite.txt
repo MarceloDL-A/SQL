@@ -1,0 +1,8 @@
+INSERT INTO celebs (id, name, age)
+VALUES (1, 'Justin Bieber', 22);
+INSERT INTO celebs (id, name, age)
+VALUES (2, 'Alice', 8);
+INSERT INTO celebs (id, name, age)
+VALUES (3, 'Marcelo', 37);
+INSERT INTO celebs (id, name, age)
+VALUES (4, 'Oi', 12);
