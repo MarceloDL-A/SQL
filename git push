@@ -1,4 +1,7 @@
 https://www.datacamp.com/community/tutorials/git-push-pull
+https://stackoverflow.com/questions/51909540/why-use-headmaster-instead-of-just-master-in-a-git-push-origin
+>>HEAD
+git push HEAD:A
 
 COMMUNITY
 News
